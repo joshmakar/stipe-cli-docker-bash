@@ -14,5 +14,5 @@ if [ $# -gt 0 ]; then
         --api-key "$STRIPE_SECRET_KEY"
 
 else
-    echo -e "${WHITE}No command specified. Type 'help' for a list of commands.${NC}" >&2
+    echo -e "${WHITE}No command specified. Use './stripe help' for a list of commands.${NC}" >&2
 fi
