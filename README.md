@@ -6,4 +6,4 @@ Stripe-CLI
 1. Clone this repo
 2. Create environment file by running `cp .env.example .env`
 3. Fill in the environment variables in the `.env` file
-4. Run `./stipe <command>` to run a command using the Stripe-CLI
+4. Run `./stripe <command>` to run a command using the Stripe-CLI
