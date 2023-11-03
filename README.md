@@ -1,5 +1,6 @@
 # Stipe CLI Bash
-Stipe bash script and environment for running one-off commands to the Stripe-CLI
+Stipe bash script and environment for running one-off commands using the Docker
+Stripe-CLI
 
 ## Installation
 1. Clone this repo
