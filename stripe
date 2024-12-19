@@ -9,6 +9,12 @@ if [ -f ./.env ]; then
     source ./.env
 fi
 
+# If ./stripe update is run, update the stripe-cli image by pulling the latest version
+if [ "$1" == "update" ]; then
+    docker pull stripe/stripe-cli:latest
+    exit 0
+fi
+
 if [ $# -gt 0 ]; then
     docker run --rm -it stripe/stripe-cli:latest "$@" \
         --api-key "$STRIPE_SECRET_KEY"

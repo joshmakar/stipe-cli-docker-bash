@@ -18,8 +18,16 @@ hostname to forward events to the container as well as skipping certificate
 verification. For example:
 
 ```bash
-./stripe listen --forward-to https://host.docker.internal:/path/to/endpoint/ \
+./stripe listen --forward-to https://host.docker.internal(:OPTIONAL_PORT)/path/to/endpoint/ \
     --skip-verify
 ```
 
 _Reference: [GitHub Docker and Port Mapping](https://github.com/stripe/stripe-cli/issues/547)_
+
+## Updating the Stripe CLI
+
+To update the Stripe CLI, run the following command:
+
+```bash
+./stripe update
+```
